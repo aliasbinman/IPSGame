@@ -17,15 +17,11 @@ struct Vec2
 
 	float x,y;
 
-	Vec2 operator*(float v);    //multiplication
-	Vec2 &operator*=(float v);    //multiplication
+	Vec2 operator*(float v);			//multiplication
+	Vec2 &operator*=(float v);			//multiplication
 	Vec2 &operator+=(const Vec2 &vec);  ////assigning new result to the vector
 	Vec2 &operator-=(const Vec2 &vec);  ////assigning new result to the vector
 };
 
-struct Entity
-{
-	Vec2 Pos;	
-	Vec2 Veloc;
-
-};
+const float PI = 3.1415926535897932384626433f;
+inline float DEG2RAD(float x) { return x*PI/180.0f; }
